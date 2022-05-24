@@ -181,9 +181,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: black;
-  border-color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .button.button-primary:hover,
@@ -230,8 +230,11 @@ input[type="button"].button-primary:focus {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 14px;
   color: gray;
+  text-align: center;
+  margin-top: 6px;
+  font-family: monospace;
 }
 
 
@@ -251,16 +254,32 @@ h3 {
 
 }
 
+
+
 .livro01 {
   margin-top: 20px;
 }
 
-.carIndex {
-  width: 300px;
-  height: 300px;
-  border-radius: 8px;
+.card {
+  width: 320px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
   box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
 }
+
+
+
+.info-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
 
 .section-center {
   display: grid;
@@ -356,6 +375,8 @@ footer {
 .curiosidades h1,
 p {
   color: gray;
+  text-align: center;
+  font-family: monospace;
 }
 
 .veja-produtos {
@@ -506,8 +527,14 @@ h5 {
 }
 
 .column {
-  float: left;
-  width: 33.33%;
+  position: relative;
+
+}
+
+.column :hover {
+
+  -webkit-transform: scale(1.1);
+
 }
 
 .column {
@@ -529,11 +556,11 @@ h5 {
   }
 }
 
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 
 
@@ -546,14 +573,21 @@ h5 {
 }
 
 section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
   width: 100%;
-  display: inline-block;
   background: white;
   height: 50vh;
-  text-align: center;
-  font-size: 22px;
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  grid-gap: 55px;
 }
 
 .footer-distributed {
