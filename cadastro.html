@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/estilocadastro.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Livraria - Cadastrar-se</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-header">
+            <ul class="nav-ul">
+                <li ><a href="./index.html" class="nav-li">Página Inicial</a></li>
+                <li ><a href="./produtos.html" class="nav-li">Livros</a></li>
+                <li ><a href="./quem-somos.html" class="nav-li">Ofertas</a></li>
+                <li ><a href="./atendimento.html" class="nav-li">Atendimento e Televendas</a></li>
+            </ul>
+        </nav>
+        <!--Botões de Usuário e Carrinho-->
+        <nav class="user-nav">
+            <ul class="user-ul">
+                <li class="user-cart">
+                    <img src="./img/carr.ico" alt="">
+                    <div id="shopping-cart">
+                        <table id="cart-content" class="shopping-cart-css">
+                            <thead>
+                                <th>PRODUTO</th>
+                                <th>NOME</th>
+                                <th>PREÇO</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </br>
+                            <a href="#" id="clear-cart" class="button-clean-cart">Limpar Carrinho</a>
+                    </div>    
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+    <form class="formulario" action="">
+        
+        <div class="card">
+            <div class="logo">
+                <img src="./img/teste.png" alt="">
+            </div>
+            <div class="ipt">
+                <input type="email" name="Email" placeholder="Digite seu email" required> 
+                <input type="password" name="Senha" placeholder="Digite sua senha" required>
+                <input type="password" name="Senha" placeholder="Digite novamente" required>
+            </div>
+            <div class="btn">
+                <button type="submit"><a action="#" href="login.html">Cadastrar</a></button>
+            </div>
+        </div>
+   </form>
+</body>
+</html>

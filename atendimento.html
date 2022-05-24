@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria - Centra de ajuda</title>
+    <!--Links pra fontes e o CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+
+    <style>
+        h1 {
+            text-align: center;
+            color: gray;
+            margin-top: 10px;
+
+        }
+
+        .galerry {
+            width: 100%;
+            height: 400px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .galerry :hover {
+            -webkit-transform: scale(1.1);
+        }
+
+        .at {
+            width: 260px;
+            height: 330px;
+            padding: 25px;
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            border-radius: 12px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        p {
+            color: gray;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Parte de cima da página (Onde tem logo e os links pra outras páginas)-->
+    <header>
+        <!--Logo-->
+        <div class="logo-flex">
+            <img src="./img/teste.png" alt="logo">
+        </div>
+        <!--Links pra outras páginas-->
+        <nav class="nav-header">
+            <ul class="nav-ul">
+                <li><a href="./index.html" class="nav-li">Página Inicial</a></li>
+                <li><a href="./produtos.html" class="nav-li">Livros</a></li>
+                <li><a href="./quem-somos.html" class="nav-li">Ofertas</a></li>
+                <li><a href="./atendimento.html" class="nav-li">Atendimento e Televendas</a></li>
+            </ul>
+        </nav>
+        <!--Botões de Usuário e Carrinho-->
+        <nav class="user-nav">
+            <ul class="user-ul">
+                <li class="user-cart">
+                    <img src="./img/carr.ico" alt="">
+                    <div id="shopping-cart">
+                        <table id="cart-content" class="shopping-cart-css">
+                            <thead>
+                                <th>PRODUTO</th>
+                                <th>NOME</th>
+                                <th>PREÇO</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        </br>
+                        <a href="#" id="clear-cart" class="button-clean-cart">Limpar Carrinho</a>
+                        </br>
+                        </br>
+                        <button onclick="buyNow()" id="buy-now" class="button-clean-cart">Comprar Agora</button>
+                    </div>
+                </li>
+                <li><a href="login.html" class="user-user"><img src="./img/user-add_114450.ico" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Como podemos ajudar?</h1>
+
+    <div class="galerry">
+
+        <div class="at">
+            <img src="./img/Email_30017.png">
+            <h4>E-mail</h4>
+            <p>Envie seu e-mail para nossa equipe</p>
+        </div>
+        <div class="at">
+            <img src="./img/Phone_43546.png">
+            <h4>Telefone<h4>
+                    <h4>(11) 3056-7070</h4>
+                    <p> Segunda à sábado - 9h às 18h</p>
+        </div>
+        <div class="at">
+            <img src="./img/Google_Maps_43550.png">
+            <h4>
+                <a class="end"
+                    href="https://www.google.com.br/maps/place/Shopping+Interlagos/@-23.6764362,-46.6782658,17z/data=!4m12!1m6!3m5!1s0x94ce501ac3b77f8f:0xdaa230261180506a!2sShopping+Interlagos!8m2!3d-23.6764362!4d-46.6782658!3m4!1s0x94ce501ac3b77f8f:0xdaa230261180506a!8m2!3d-23.6764362!4d-46.6782658">Conferir
+                    nosso endereço</a>
+            </h4>
+        </div>
+        <div class="at">
+            <img src="./img/atendimento_v1.png">
+            <h4>Televendas</h4>
+            <h4>(11) 3056-4320</h4>
+            <p>Segunda à sábado - 9h às 18h</p>
+        </div>
+    </div>
+</body>
+
+</html>

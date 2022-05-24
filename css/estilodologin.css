@@ -1,0 +1,110 @@
+body {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+label {
+    
+    font-size: 9pt;
+    color: rgb(30, 137, 231);
+
+}
+a{
+    text-decoration: none;
+}
+
+header {
+    background: opacity 0.5;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+.ipt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    border: solid 2px #09b8e8;
+    padding: 30px;
+    border-radius: 14px;
+    width: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.lg{
+    margin-bottom: 20px;
+}
+
+.formulario {
+    margin: auto;
+    /*cetraliza a div*/
+    padding-top: 60px;
+    /*distância do topo*/
+}
+
+.cardtop {
+    text-align: center;
+    width: 200px;
+
+}
+
+.usuariologin {
+    border-radius: 50px;
+
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-group {
+    width: 100px;
+    color: rgb(0, 0, 0);
+    padding-top: 40px;
+    display: block;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+}
+
+#cadastre {
+
+    margin-top: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    font-size: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#acessar {
+
+    margin-top: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
