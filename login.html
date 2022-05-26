@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
 <body>
     <header>
-        <nav class="nav-header">
-            <ul class="nav-ul">
-                <li><a href="./index.html" class="nav-li">Página Inicial</a></li>
-                <li><a href="./produtos.html" class="nav-li">Livros</a></li>
-                <li><a href="./quem-somos.html" class="nav-li">Ofertas</a></li>
-                <li><a href="./atendimento.html" class="nav-li">Atendimento e Televendas</a></li>
-            </ul>
-        </nav>
+        <div class="dropdown">
+            <button class="dropbtn">Conheça a plataforma</button>
+            <div class="dropdown-content">
+                <a href="./index.html">Página Inicial</a>
+                <a href="./produtos.html">Livros</a>
+                <a href="./quem-somos.html">Ofertas</a>
+                <a href="./atendimento.html">Atendimento e televendas</a>
+            </div>
+        </div>
         <nav class="user-nav">
             <ul class="user-ul">
                 <li class="user-cart">
@@ -46,9 +47,9 @@
         </nav>
     </header>
     <form class="formulario" action="">
-        <div class="card">
+        <div class="card-form">
             <div class="logo">
-                <img src="./img/teste.png" alt="">
+                <img style="margin-bottom: 16px;" src="./img/teste.png" alt="">
             </div>
             <div class="ipt">
                 <input class="group" type="email" name="Email" placeholder="Digite seu email" required>
@@ -56,8 +57,8 @@
                 <label><input type="checkbox">Lembre-me</label>
             </div>
             <div class="btn">
-                <button type="submit" style="width: 149px"><a action="#" href="index.html">Acessar</a></button>
-                <button type="submit"><a action="#" href="cadastro.html">Cadastre-se</a></button>
+                <button type="submit"><a action="#" href="index.html">Acessar...</a></button>
+                <button type="submit"><a action="#" href="cadastro.html">Cadastrar</a></button>
             </div>
     </form>
 </body>
